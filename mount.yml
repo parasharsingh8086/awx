@@ -1,4 +1,5 @@
 - name: Umount /common File system
+  hosts: all
   mount:
     path: /common
     state: unmounted
