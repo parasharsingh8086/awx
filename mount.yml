@@ -1,5 +1,6 @@
-- name: Umount /common File system
-  hosts: all
-  mount:
-    path: /common
-    state: unmounted
+- hosts: all
+  tasks:
+    - name: Umount common File system
+      mount:
+        path: /common
+        state: unmounted
