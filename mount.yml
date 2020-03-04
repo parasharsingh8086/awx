@@ -1,0 +1,4 @@
+- name: Umount /common File system
+  mount:
+    path: /common
+    state: unmounted
