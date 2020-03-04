@@ -1,6 +1,8 @@
 - hosts: all
+  vars:
+    desired_state: "{{ chosen_state }}"
   tasks:
     - name: Umount common File system
       mount:
         path: /common
-        state: unmounted
+        state: {{ desired_state }}
