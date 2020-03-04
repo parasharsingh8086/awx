@@ -6,6 +6,5 @@
       mount:
         path: /common
         fstype: nfs
-        opts: default
         src: "KOWIG04:/ifs/NFS/KOWIG04/D/Shared/Common"
         state: "{{ desired_state }}"
