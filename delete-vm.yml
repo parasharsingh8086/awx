@@ -6,16 +6,16 @@
   hosts: localhost
   tasks:
     - set_fact:
-        vm_name: "uswix601"
-        datacenter: "Kohler Main"
+        vm_name: ""
+        datacenter: ""
 
     - name: Remove "{{ vm_name }}"
       vmware_guest:
-        hostname: "uswiw470.kohlerco.com"
-        username: "ko95056@kohlerco.com"
-        password: "drkB4day*3"
+        hostname: ""
+        username: ""
+        password: ""
         validate_certs: no
-        cluster: "UNIX Cluster"
+        cluster: ""
         name: "{{ vm_name }}"
         state: absent
       delegate_to: localhost
