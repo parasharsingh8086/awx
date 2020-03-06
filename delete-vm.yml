@@ -12,7 +12,7 @@
     - name: Remove "{{ vm_name }}"
       vmware_guest:
         hostname: "uswiw470.kohlerco.com"
-        username: "mail/\ko95056"
+        username: "mail/ko95056"
         password: "drkB4day*3"
         validate_certs: no
         cluster: "UNIX Cluster"
