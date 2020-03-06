@@ -1,0 +1,10 @@
+- hosts: all
+  vars:
+    desired_state: "{{ chosen_state }}"
+  tasks:
+    - name: Unmount common File system
+      mount:
+        path: /common
+        fstype: nfs
+        src: "KOWIG04:/ifs/NFS/KOWIG04/D/Shared/Common"
+        state: "{{ desired_state }}"
