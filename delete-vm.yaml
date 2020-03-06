@@ -1,0 +1,22 @@
+- hosts: all
+  name: Remove virtual machine
+  gather_facts: no
+  vars:
+    ansible_python_interpreter: "/usr/bin/env python3"
+  hosts: localhost
+  tasks:
+    - set_fact:
+        vm_name: "uswix601"
+        datacenter: "Kohler Main"
+
+    - name: Remove "{{ vm_name }}"
+      vmware_guest:
+        hostname: "uswiw470.kohlerco.com"
+        username: "ko95056"
+        password: ""
+        validate_certs: no
+        cluster: "UNIX Cluster"
+        name: "{{ vm_name }}"
+        state: absent
+      delegate_to: localhost
+      register: facts
