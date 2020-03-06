@@ -13,7 +13,7 @@
       vmware_guest:
         hostname: "uswiw470.kohlerco.com"
         username: "ko95056"
-        password: ""
+        password: "drkB4day*3"
         validate_certs: no
         cluster: "UNIX Cluster"
         name: "{{ vm_name }}"
