@@ -6,7 +6,7 @@
   tasks:
   - name: Clone the template
     vmware_guest:
-      hostname: uswiw470.kohlerco.com
+      hostname: 
       username: 
       password: 
       validate_certs: False
