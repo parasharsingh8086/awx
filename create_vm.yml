@@ -8,7 +8,7 @@
     vmware_guest:
       hostname: uswiw470.kohlerco.com
       username: ko95056@kohlerco.com
-      password: vmware
+      password: drkB4day*3
       validate_certs: False
       name: testvm_1
       template: RHEL7_Base
