@@ -1,0 +1,8 @@
+---
+- name: Patching RHEL Host
+  hosts: patch_host
+
+  roles:
+    - patching
+
+...
