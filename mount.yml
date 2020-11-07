@@ -8,3 +8,8 @@
         fstype: nfs
         src: "KOWIG04:/ifs/NFS/KOWIG04/D/Shared/Common"
         state: "{{ desired_state }}"
+    # Handler showing how to clean yum metadata cache
+    - name: yum-clean-metadata
+      command: yum clean metadata
+      args:
+        warn: no
