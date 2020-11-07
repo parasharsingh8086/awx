@@ -1,0 +1,9 @@
+- hosts: all
+  vars:
+    desired_state: "{{ chosen_state }}"
+  tasks:
+    # Handler showing how to clean yum metadata cache
+    - name: yum-clean-metadata
+      command: yum clean metadata
+      args:
+        warn: no
